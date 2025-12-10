@@ -6,10 +6,10 @@ Files:
 - `variables.tf` - Variables including customer gateway IP and ASN
 - `main.tf` - VPC, subnet, internet gateway, VPN gateway, customer gateway, VPN connection, route propagation, and security group
 - `outputs.tf` - Useful outputs (VPN ID, config file path, VPC ID, EC2 Public IP)
-- `envs/dev/terraform.tfvars` - Fill in your `customer_gateway_ip` and optionally `customer_gateway_asn`
+- `envs/dev/examples.tfvars` - Fill in your `customer_gateway_ip` and optionally `customer_gateway_asn`
 
 Quick start:
-1. Fill `envs/dev/terraform.tfvars` with your public IP, ASN, and Key Pair.
+1. Fill `envs/dev/examples.tfvars` with your public IP, ASN, and Key Pair.
 2. Export AWS credentials (or configure them via your preferred method):
 
 ```powershell
