@@ -1,0 +1,9 @@
+.aws/
+*.tfstate
+*.tfstate.backup
+.terraform/
+terraform.tfvars
+*.auto.tfvars
+crash.log
+override.tf 
+.env
