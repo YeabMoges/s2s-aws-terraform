@@ -26,13 +26,13 @@ terraform init
 4. Preview the plan:
 
 ```powershell
-terraform plan -var-file=envs/dev/terraform.tfvars
+terraform plan -var-file=envs/dev/examples.tfvars
 ```
 
 5. Apply (creates resources in AWS):
 
 ```powershell
-terraform apply -var-file=envs/dev/terraform.tfvars
+terraform apply -var-file=envs/dev/examples.tfvars
 ```
 
 After apply completes, the VPN configuration XML will be written into the workspace as shown in the `vpn_configuration_file` output. Use that file to configure your on-prem VPN device (it contains the tunnel endpoints, pre-shared keys, and BGP details).
